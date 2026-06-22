@@ -1,0 +1,99 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Order Page</title>
+    <link rel="stylesheet" href="third.css">
+</head>
+
+<body>
+
+<div class="box">
+
+    <h2>Place Order</h2>
+    <h4>Select Your Required Quantity</h4>
+
+    <div class="item">
+        <span>Burger (₹120)</span>
+        <input type="number" id="burgerQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <span>Pizza (₹250)</span>
+        <input type="number" id="pizzaQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <span>Fries (₹90)</span>
+        <input type="number" id="friesQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <span>Sandwich (₹110)</span>
+        <input type="number" id="sandwichQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <span>Pasta (₹180)</span>
+        <input type="number" id="pastaQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <span>Noodle (₹160)</span>
+        <input type="number" id="noodleQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <span>Ice Cream (₹80)</span>
+        <input type="number" id="icecreamQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <span>Juice (₹70)</span>
+        <input type="number" id="juiceQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <span>Coffee (₹60)</span>
+        <input type="number" id="coffeeQty" min="0" value="0">
+    </div>
+
+    <button onclick="calculateTotal()">Place Order</button>
+    
+    <div class="total" id="totalBox">Total: ₹0</div>
+
+</div>
+
+<script>
+function calculateTotal() {
+    let burgerPrice = 120;
+    let pizzaPrice = 250;
+    let friesPrice = 90;
+    let sandwichPrice = 110;
+    let pastaPrice = 180;
+    let noodlePrice = 160;
+    let icecreamPrice = 80;
+    let juicePrice = 70;       
+    let coffeePrice = 60;
+
+    let burgerQty = Number(document.getElementById("burgerQty").value);
+    let pizzaQty = Number(document.getElementById("pizzaQty").value);
+    let friesQty = Number(document.getElementById("friesQty").value);
+    let sandwichQty = Number(document.getElementById("sandwichQty").value);
+    let pastaQty = Number(document.getElementById("pastaQty").value);
+    let noodleQty = Number(document.getElementById("noodleQty").value);
+    let icecreamQty = Number(document.getElementById("icecreamQty").value);
+    let juiceQty = Number(document.getElementById("juiceQty").value);
+    let coffeeQty = Number(document.getElementById("coffeeQty").value);
+
+    let total = (burgerQty * burgerPrice) + (pizzaQty * pizzaPrice) + 
+                (friesQty * friesPrice) + (sandwichQty * sandwichPrice) + 
+                (pastaQty * pastaPrice) + (noodleQty * noodlePrice) + 
+                (icecreamQty * icecreamPrice) + (juiceQty * juicePrice) + 
+                (coffeeQty * coffeePrice);
+
+    document.getElementById("totalBox").innerText = "Total: ₹" + total;
+}
+</script>
+
+</body>
+</html>

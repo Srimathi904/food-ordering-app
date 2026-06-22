@@ -1,0 +1,51 @@
+ body {
+    font-family: Arial;
+    background: #f2f2f2;
+    padding: 30px;
+}
+
+.box {
+    width: 350px;
+    background: white;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+h2 {
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+input {
+    width: 60px;
+    padding: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+.total {
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}

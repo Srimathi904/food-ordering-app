@@ -1,0 +1,39 @@
+body{
+     font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+     padding: 20px;
+}
+
+.title{
+    text-align: center;
+    color: #ff6b35;
+       margin-bottom: 30px;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+ 
+.card{
+    background:grey;
+    padding: 15px;
+     border-radius: 10px;
+    text-align: center;
+
+}
+
+.card img{
+    width: 65%;
+    height: 100px;
+    object-fit:contain;
+}
+ 
+
+.card p{
+    color: orangered;
+    font-size: 20px;
+    font-weight: bold;
+}
