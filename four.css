@@ -1,70 +1,147 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #ff9966, #ff5e62);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            to right,
+            #ff9966,
+            #ff5e62
+        );
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
 }
+
 
 .container {
-  width: 100%;
-  text-align: center;
+
+    width: 100%;
+
+    text-align: center;
+
 }
+
 
 .card {
-  background: white;
-  padding: 30px;
-  width: 350px;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+    background: white;
+
+    padding: 30px;
+
+    width: 380px;
+
+    max-width: 90%;
+
+    margin: auto;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 20px
+        rgba(0,0,0,0.2);
+
 }
+
 
 h1 {
-  color: green;
+
+    color: green;
+
 }
+
 
 .sub {
-  color: gray;
+
+    color: gray;
+
 }
+
 
 .order-box {
-  background: #f5f5f5;
-  padding: 10px;
-  margin: 15px 0;
-  border-radius: 10px;
-  text-align: left;
+
+    background: #f5f5f5;
+
+    padding: 10px;
+
+    margin: 15px 0;
+
+    border-radius: 10px;
+
+    text-align: left;
+
 }
+
 
 button {
-  background: #ff5e62;
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 10px;
+
+    background: #ff5e62;
+
+    color: white;
+
+    border: none;
+
+    padding: 11px;
+
+    width: 100%;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
 }
+
 
 button:hover {
-  background: #e14b50;
+
+    background: #e14b50;
+
 }
+
+
+.secondary {
+
+    background: #555;
+
+}
+
 
 .social {
-  margin-top: 15px;
+
+    margin-top: 15px;
+
 }
+
 
 .social a {
-  margin: 0 8px;
-  text-decoration: none;
-  color: #ff5e62;
-  font-weight: bold;
+
+    margin: 0 8px;
+
+    text-decoration: none;
+
+    color: #ff5e62;
+
+    font-weight: bold;
+
 }
 
+
 .footer {
-  margin-top: 15px;
-  font-size: 12px;
-  color: gray;
+
+    margin-top: 15px;
+
+    font-size: 12px;
+
+    color: gray;
+
 }

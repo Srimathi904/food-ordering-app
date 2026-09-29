@@ -1,81 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     
-     <link rel ="stylesheet" href="new.css">
-</head>
-</head>
-<body>
-    <div= class="logo">
-            <img src="changedlogo.png" alt="logo" width="65" height="65">
-        </div>
-     
-        <div class="super">
-    <h1>FOODIE HUB</h1>
-    <h3>Your Hunger Our Priority!!</h3>
-         
-        </div>
-    </div>
-    <div class="nav-links">
-        <a href="">Home</a>
-        <a href="Menu.html">menu</a>
-        <a href="placeorder.html">Place Order</a>
-        <a href="Orderconfirmation.html">orderconfirmationn</a>
-        <div= class  ="chi">
-            <img src="troll.jpeg" alt="chii" width="65" height="65">
 
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FOODIE HUB</title>
+
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="changedlogonew.png" alt="Foodie Hub Logo">
     </div>
-    <section class="offers">
+
+    <div class="super">
+        <h1>FOODIE HUB</h1>
+        <h3>Your Hunger Our Priority!!</h3>
+    </div>
+
+</header>
+
+
+<!-- Navigation -->
+
+<div class="nav-links">
+
+    <a href="index.html">Home</a>
+
+    <a href="menu.html">Menu</a>
+
+    <a href="placeorder.html">
+        Place Order
+        <span class="cart-count" id="cartCount">0</span>
+    </a>
+
+    <a href="Orderconfirmation.html">
+        Order Confirmation
+    </a>
+
+    <div class="chi">
+        <img src="trollnew.jpeg" alt="Food">
+    </div>
+
+</div>
+
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+    <div>
+
+        <h2>Delicious Food, Delivered Fast 🍕</h2>
+
+        <p>
+            Fresh food • Great taste • Easy ordering
+        </p>
+
+        <a class="main-btn" href="menu.html">
+            Order Now
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- Offers -->
+
+<section class="offers">
+
     <h2>🔥 Today's Offers</h2>
-    <h3>     Free Delivery On First Order!!!!😱</h3>
+
+    <h3>
+        Free Delivery On First Order!!!! 😱
+    </h3>
+
 
     <div class="offer-grid">
 
+
+        <!-- Burger -->
+
         <div class="offer-card">
-            <img src="burger.jpeg" alt="Burger">
+
+            <img src="burgernew.jpeg" alt="Burger">
+
             <h3>Cheesy Burger</h3>
-            <p>Enjoy our juicy cheesy burger with a special discount today.</p>
-            <p>"💥Buy 1 Get 1 Free"</p>
+
+            <p>
+                Enjoy our juicy cheesy burger with a special discount today.
+            </p>
+
+            <p>
+                💥 Buy 1 Get 1 Free
+            </p>
+
+            <button onclick="addToCart('Burger',120)">
+                Add to Cart
+            </button>
+
         </div>
 
+
+        <!-- Pizza -->
+
         <div class="offer-card">
-            <img src="pizza.jpeg" alt="Pizza">
+
+            <img src="pizzanew.jpeg" alt="Pizza">
+
             <h3>Veg Pizza</h3>
-            <p>Freshly baked pizza loaded with delicious toppings.</p>
-            <p>"🍕upto 50% off"</p>
+
+            <p>
+                Freshly baked pizza loaded with delicious toppings.
+            </p>
+
+            <p>
+                🍕 Upto 50% off
+            </p>
+
+            <button onclick="addToCart('Pizza',250)">
+                Add to Cart
+            </button>
+
         </div>
 
+
+        <!-- Fries -->
+
         <div class="offer-card">
-            <img src="fries.jpeg" alt="Fries">
+
+            <img src="friesnew.jpeg" alt="Fries">
+
             <h3>Crispy Fries</h3>
-            <p>Golden crispy fries served hot and fresh.</p>
-            <p>"🍟25% extra🔥"</p>
+
+            <p>
+                Golden crispy fries served hot and fresh.
+            </p>
+
+            <p>
+                🍟 25% extra 🔥
+            </p>
+
+            <button onclick="addToCart('French Fries',90)">
+                Add to Cart
+            </button>
+
         </div>
 
+
+        <!-- Pasta -->
+
         <div class="offer-card">
-            <img src="pasta.jpeg" alt="Pasta">
+
+            <img src="pastanew.jpeg" alt="Pasta">
+
             <h3>Italian Pasta</h3>
-            <p>Rich and creamy pasta made with authentic flavors.</p>
-            <p>"Buy 1 Get 1 Free🎉"</p>
+
+            <p>
+                Rich and creamy pasta made with authentic flavors.
+            </p>
+
+            <p>
+                Buy 1 Get 1 Free 🎉
+            </p>
+
+            <button onclick="addToCart('Pasta',180)">
+                Add to Cart
+            </button>
+
         </div>
 
+
+        <!-- Sandwich -->
+
         <div class="offer-card">
-            <img src="sandwich.jpeg" alt="Sandwich">
+
+            <img src="sandwichnew.jpeg" alt="Sandwich">
+
             <h3>Club Sandwich</h3>
-            <p>A perfect snack packed with fresh ingredients.</p>
-            <p>"upto 70% off 🥪"</p>
+
+            <p>
+                A perfect snack packed with fresh ingredients.
+            </p>
+
+            <p>
+                Upto 70% off 🥪
+            </p>
+
+            <button onclick="addToCart('Sandwich',110)">
+                Add to Cart
+            </button>
+
         </div>
 
+
+        <!-- Ice Cream -->
+
         <div class="offer-card">
-            <img src="iccrm.jpeg" alt="Ice Cream">
+
+            <img src="iccrmnew.jpeg" alt="Ice Cream">
+
             <h3>Ice Cream</h3>
-            <p>Cool down with our refreshing ice cream varieties.</p>
-            <p>"free mojito drink🥤 "</p>
+
+            <p>
+                Cool down with our refreshing ice cream varieties.
+            </p>
+
+            <p>
+                Free mojito drink 🥤
+            </p>
+
+            <button onclick="addToCart('Ice Cream',80)">
+                Add to Cart
+            </button>
+
         </div>
 
     </div>
+
 </section>
-   
+
+
+<footer>
+
+    © 2026 FOODIE HUB
+    • Your Hunger Our Priority!!
+
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
+
 </html>

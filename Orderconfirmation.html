@@ -1,42 +1,173 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Order Confirmation</title>
-  <link rel="stylesheet" href="four.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Order Confirmation</title>
+
+    <link
+        rel="stylesheet"
+        href="four.css"
+    >
+
 </head>
+
+
 <body>
 
-  <div class="container">
+
+<div class="container">
+
 
     <div class="card">
-      <h1>🎉 Order Placed Successfully!</h1>
-      <p class="sub">Thank you for ordering with us</p>
-
-      <div class="order-box">
-        <p><b>Order ID:</b> #FOOD12345</p>
-        <p><b>Estimated Delivery:</b> 30 - 40 mins</p>
-        <p><b>Total Paid:</b> ₹450</p>
-      </div>
-
-      <button>Back to Home</button>
 
 
+        <h1>
+            🎉 Order Placed Successfully!
+        </h1>
 
-      <h3>Follow Us</h3>
 
-      <div class="social">
-        <a href="https://www.facebook.com" target="_blank">Facebook</a>
-        <a href="https://wa.me/919876543210" target="_blank">WhatsApp</a>
-        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-      </div>
+        <p class="sub">
+            Thank you for ordering with us ❤️
+        </p>
 
-      <p class="footer">
-        Need help? Contact support@foodapp.com
-      </p>
+
+
+        <div class="order-box">
+
+
+            <p>
+
+                <b>Order ID:</b>
+
+                <span id="orderId">
+                    #FOOD12345
+                </span>
+
+            </p>
+
+
+            <p>
+
+                <b>Estimated Delivery:</b>
+
+                30 - 40 mins
+
+            </p>
+
+
+            <p>
+
+                <b>Total Paid:</b>
+
+                <span id="paidTotal">
+                    ₹0
+                </span>
+
+            </p>
+
+
+            <p>
+
+                <b>Customer:</b>
+
+                <span id="customerDisplay">
+                    Guest
+                </span>
+
+            </p>
+
+
+        </div>
+
+
+
+        <button
+            onclick="location.href='index.html'"
+        >
+
+            🏠 Back to Home
+
+        </button>
+
+
+
+        <button
+            class="secondary"
+            onclick="goBack()"
+        >
+
+            ← Back
+
+        </button>
+
+
+
+        <h3>
+            Follow Us
+        </h3>
+
+
+        <div class="social">
+
+            <a
+                href="https://www.facebook.com"
+                target="_blank"
+            >
+                Facebook
+            </a>
+
+
+            <a
+                href="https://wa.me/919876543210"
+                target="_blank"
+            >
+                WhatsApp
+            </a>
+
+
+            <a
+                href="https://www.instagram.com"
+                target="_blank"
+            >
+                Instagram
+            </a>
+
+        </div>
+
+
+        <p class="footer">
+
+            Need help?
+            Contact support@foodapp.com
+
+        </p>
+
+
     </div>
 
-  </div>
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+    loadConfirmation();
+
+</script>
+
 
 </body>
+
 </html>
